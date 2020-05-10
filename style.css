@@ -1,9 +1,15 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -21,3 +27,164 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+/*
+.zbozi {
+  border: 2px solid red;
+}
+
+.vizual {
+  border: 2px dashed green;
+}
+
+.logo {
+  border: 2px solid hotpink;
+}
+
+.bota {
+  border: 2px solid gold;
+}
+
+.cenovka {
+  border: 2px solid fuchsia;
+}
+
+.detaily {
+  border: 2px dashed blue;
+}
+
+.akce {
+  border: 2px solid greenyellow;
+}
+*/
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.zbozi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #f5f5f5;
+}
+
+/*--------levá polovina---------------*/
+.vizual {
+  width: 335px;
+  height: 440px;
+  border-radius: 10px 0px 0px 10px;
+  padding: 30px;
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  color: white;
+  position: relative;
+}
+
+.slogan {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bota {
+  position: absolute;
+  right: -10px;
+}
+
+.cenovka {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+}
+
+.cena {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.zaruka {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/*--------pravá polovina---------------*/
+.detaily {
+  width: 335px;
+  height: 440px;
+  border-radius: 0px 10px 10px 0px;
+  padding: 30px;
+  background-color: white;
+  position: relative;
+}
+.nazev {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.produkt {
+  color: #959595;
+}
+
+.popis {
+  padding-bottom: 30px;
+  border-bottom: 1.5px solid #06d7c1;
+  margin: 30px auto;
+}
+
+.parametr {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.velikosti {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 12px;
+}
+
+.vybrana {
+  font-weight: 500;
+  color: #f15f42;
+  border: 1px solid #f15f42;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 6px;
+}
+
+.akce {
+  position: absolute;
+  bottom: 30px;
+  background-color: #f15f42;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tlacitko {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.tlacitko:visited {
+  color: white;
+}
